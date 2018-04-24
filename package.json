@@ -1,0 +1,33 @@
+{
+  "name": "create-yo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dkundel/create-yo",
+  "description": "A wrapper around the Yeoman CLI for npm/yarn create",
+  "license": "MIT",
+  "author": {
+    "name": "dominik.kundel@gmail.com",
+    "email": "dominik.kundel@gmail.com",
+    "url": "https://dkundel.com"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "contrib:add": "all-contributors add",
+    "contrib:gen": "all-contributors generate"
+  },
+  "dependencies": {
+    "execa": "^0.10.0",
+    "libnpx": "^10.2.0",
+    "meow": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "@dkundel/eslint-config-js": "^2.0.0",
+    "all-contributors-cli": "^4.11.1"
+  },
+  "repository": "dkundel/create-yo",
+  "main": "index.js",
+  "bin": "cli.js"
+}
